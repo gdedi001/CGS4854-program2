@@ -2,6 +2,9 @@
 <html>
 <head>
     <title>de Diego, Gabriel</title>
+    <link rel="stylesheet" type="text/css" href="data.css">
+    <link href='http://fonts.googleapis.com/css?family=Syncopate' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
 </head>
 <body>
     
@@ -17,22 +20,21 @@
     
     <h1>VEDM</h1>
     
+    <!-- TODO: Create Data.php file for server processes -->
 <form action="Data.php" method="post">
     
     <!-- Text input boxes -->
     <div id="text-input">
-        <input type="text" name="telephone" value="Telephone #">
+        <input class="textbox" type="text" name="firstname" value="First Name">
+        <input class="textbox" type="text" name="lastname" value="Last Name">
             <br>
-        <input type="text" name="firstname" value="First Name">
-            <br>
-        <input type="text" name="lastname" value="Last Name">
-            <br>
-        <input type="text" name="email" value="email">
+        <input class="textbox" type="text" name="telephone" value="Telephone #">
+        <input class="textbox" type="text" name="email" value="Email">
     </div>
     
     <!-- Drop down menu -->
     <div id="drop-down">
-        <select name="drop_down" size="1">
+        <select id="drop" name="drop_down" size="1">
             <option>Male</option>
             <option>Female</option>
             <option selected>Gender</option>
@@ -42,7 +44,7 @@
     <!-- 6 Radio Buttons -->
     <div id="radio-bttn">
         <table>
-            <h3>Age</h3>
+            <h3><u>Age</u></h3>
             <tr>
                 <td><input type="radio" name="age" value="under">Under 20</td>
                 <td><input type="radio" name="age" value="twenties">20-30</td>
@@ -52,6 +54,40 @@
                 <td><input type="radio" name="age" value="fourties">41-50</td>
                 <td><input type="radio" name="age" value="fifties">51-60</td>
                 <td><input type="radio" name="age" value="over">Above 60</td>
+            </tr>
+        </table>
+    </div>
+    
+    <!-- Checkboxes -->
+    <div id="preferences">
+        <table>
+            <h3><u>Preferences</u></h3>
+            <tr>
+                <td><input type="checkbox" name="experience" value="ultra">UMF</td>
+                <td><input type="checkbox" name="experience" value="edc">EDC</td>
+                <td><input type="checkbox" name="experience" value="tmrwland">TomorrowLand</td>
+                <td><input type="checkbox" name="experience" value="other">Other</td>
+            </tr>
+        </table>
+    </div>
+    
+    <!-- Comment box -->
+    <div id="comments">
+        <h3><u>Comments</u></h3>
+        <textarea name="comments" rows="5" cols="50"></textarea>
+    </div>
+    
+    <!-- Buttons -->
+    <div id="buttons">
+        <table>
+            <tr>
+                <td>
+                    <input class="button" type="submit" value="Find" name="Find">      
+                    <input class="button" type="submit" value="Save" name="Save">
+                    <input class="button" type="submit" value="Modify" name="Modify">
+                    <input class="button" type="submit" value="Delete" name="Delete">
+                    <input class="button" type="reset"  value="Reset" name="Reset">
+                </td>
             </tr>
         </table>
     </div>
