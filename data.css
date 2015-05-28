@@ -1,0 +1,62 @@
+body {
+       background: url("https://s-media-cache-ak0.pinimg.com/originals/10/e3/9f/10e39f13ddfb80570f3e44fb2016cb76.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: white;
+    background-color: black;
+    font-family: 'Syncopate', sans-serif;
+    font-size: 45px;
+    letter-spacing: 15px;
+    text-align: center;
+    text-shadow: 2px 2px #FF0000;
+}
+
+h3 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+form {
+    background-color: #2DCDC7;  
+    border-radius: 20px;
+    margin: auto;
+    text-align: center;
+    width: 50%;
+}
+
+.textbox {
+    border-radius: 5px;
+    font-size: 15px;
+    text-align: center;
+    height: 20px;
+    margin: 10px 0 10px 0;
+    width: 150px;
+}
+
+#drop {
+    font-size: 20px;
+    height: 30px;
+    width: 100px;
+}
+
+#radio-bttn table, #preferences table, #buttons table {
+    margin: auto;   
+}
+
+textarea {
+   border-radius: 5px; 
+}
+
+#buttons {
+    background-color: rgb(255, 48, 0); 
+}
+
+.button {
+    height: auto;
+    width: auto;
+}
