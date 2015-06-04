@@ -1,5 +1,5 @@
 body {
-       background: url("https://s-media-cache-ak0.pinimg.com/originals/10/e3/9f/10e39f13ddfb80570f3e44fb2016cb76.jpg") no-repeat center center fixed; 
+       background: url("http://www.websitemagazine.com/images/blog/darkside.jpg") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -7,12 +7,40 @@ body {
     background-repeat: no-repeat;
 }
 
-h1 {
+nav {
+    margin: 20px 0 10px 0;
+}
+
+nav ul {
+        background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);  
+        background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%); 
+        background: -webkit-linear-gradient(top, #efefef 0%,#bbbbbb 100%); 
+        border-radius: 10px;
+        box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+        display: inline;
+        padding: 10px 20px;
+        list-style: none;
+}
+
+nav ul a {
+    color: red;
+    font-size: 18px;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.menu {
+    display: inline;
+}
+
+#h1 {
     color: white;
-    background-color: black;
+    background-color: rgba(0,0,0,0.3);
     font-family: 'Syncopate', sans-serif;
     font-size: 45px;
-    letter-spacing: 15px;
+    margin: 30px 0 30px 0;
+    letter-spacing: 30px;
     text-align: center;
     text-shadow: 2px 2px #FF0000;
 }
@@ -22,11 +50,15 @@ h3 {
 }
 
 form {
-    background-color: #2DCDC7;  
+    background-color: rgba(192,192,192,0.7);  
     border-radius: 20px;
     margin: auto;
     text-align: center;
     width: 50%;
+}
+
+#text-input table {
+    margin: 0 auto;   
 }
 
 .textbox {
@@ -34,8 +66,8 @@ form {
     font-size: 15px;
     text-align: center;
     height: 20px;
-    margin: 10px 0 10px 0;
-    width: 150px;
+    margin: 0 0 10px 0;
+    width: 200px;
 }
 
 #drop {
@@ -53,10 +85,19 @@ textarea {
 }
 
 #buttons {
-    background-color: rgb(255, 48, 0); 
+    background-color: rgb(255, 48, 0);
+    border-radius: 5px;
 }
 
 .button {
     height: auto;
     width: auto;
+}
+
+#display-area table {
+    border: 1px solid black;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 300px;
 }

@@ -16,9 +16,6 @@
 
 
 
-<!-- TODO: Change file extension to php -->
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,28 +26,48 @@
 </head>
 <body>
     
-    <!-- TODO: Fix menu with CSS -->
     <nav align="center">
         <ul>
-            <li><a href="#">Example1</a></li>
-            <li><a href="#">Example2</a></li>
-            <li><a href="#">Example3</a></li>
-            <li><a href="#">Example4</a></li>
+            <li class="menu"><a href="#">Home</a></li>
+            <li class="menu"><a href="#">Ultra</a></li>
+            <li class="menu"><a href="#">EDC</a></li>
+            <li class="menu"><a href="#">TomorrowLand</a></li>
         </ul>
     </nav>
     
-    <h1>VEDM</h1>
+    <div id="h1">VEDM</div>
     
     <!-- TODO: Create controller.php file for server processes -->
 <form action="controller.php" method="post">
     
     <!-- Text input boxes -->
     <div id="text-input">
-        <input class="textbox" type="text" name="firstname" value="First Name">
-        <input class="textbox" type="text" name="lastname" value="Last Name">
-            <br>
-        <input class="textbox" type="text" name="telephone" value="Telephone #">
-        <input class="textbox" type="text" name="email" value="Email">
+        <table>
+            <tr>
+                <th>First Name</th>
+            </tr>
+            <tr>
+                <td><input class="textbox" type="text" name="firstname"></td>
+            </tr>
+            <tr>
+                <th>Last Name</th>
+            </tr>
+            <tr>
+                <td><input class="textbox" type="text" name="lastname"></td>
+            </tr>
+            <tr>
+                <th>Phone #</th>
+            </tr>
+            <tr>
+                <td><input class="textbox" type="text" name="telephone"></td>
+            </tr>
+            <tr>
+                <th>E-mail</th>
+            </tr>
+            <tr>
+                <td><input class="textbox" type="text" name="email"></td>
+            </tr>            
+        </table>
     </div>
     
     <!-- Drop down menu -->
@@ -98,6 +115,18 @@
         <textarea name="comments" rows="5" cols="50"></textarea>
     </div>
     
+    <!-- Display Area -->
+    <div id="display-area">
+        <table>
+            <tr>
+                <th>Display Area</th>
+            </tr>
+            <tr>
+                <td>Information Display Here</td>
+            </tr>
+        </table>
+    </div>
+    
     <!-- Buttons -->
     <div id="buttons">
         <table>
@@ -113,6 +142,14 @@
         </table>
     </div>
 </form>
+    <nav align="center">
+        <ul>
+            <li class="menu"><a href="#">Home</a></li>
+            <li class="menu"><a href="#">Ultra</a></li>
+            <li class="menu"><a href="#">EDC</a></li>
+            <li class="menu"><a href="#">TomorrowLand</a></li>
+        </ul>
+    </nav>
 </body>
 </html>
 
